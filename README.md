@@ -28,7 +28,9 @@ Een open Max for Live-instrument: eenvoudige **Looplet**-kloon voor Ableton Live
 
 Standaard loop-regio’s na load: Head 1 = 0–25%, Head 2 = 25–50%, Head 3 = 50–75%, Head 4 = 75–100%.
 
-## Ontwikkelen
+## Ontwikkelen (Development)
+
+Bronbestanden staan onder `device/`; git volgt **`.maxpat`**, niet per se een frozen **`.amxd`**.
 
 ```
 device/
@@ -39,9 +41,13 @@ device/
     l4g.mixer.maxpat
 ```
 
-Wijzig subpatchers in Max en sla op; `pattrstorage` met `@autorestore 1` bewaart instellingen in Live-sets.
+### Workflow: template → maxpat → freeze
 
-Werk `.maxpat` bij in git; `.amxd` is optioneel (freeze vanuit Max → *Save As* naar `device/Loop4Good.amxd`).
+1. **Template** — Start in Live 12 een **Max Instrument** (M4L-template) of open `device/Loop4Good.maxpat` in Max. Zorg dat de root voldoet aan M4L-conventies (`live.thisdevice`, `pattrstorage @autorestore 1`, `devicewidth`, presentation UI).
+2. **`.maxpat` bewerken** — Pas root en subpatchers in Max aan; test in Live op een MIDI-track. Commit wijzigingen aan `device/**/*.maxpat` in git; deel geen handmatig gekopieerde frozen blobs als bron van waarheid.
+3. **Freeze `.amxd`** — Als het device stabiel is: Max → *Save As* → frozen device naar bijv. `device/Loop4Good.amxd`. Gebruik `.amxd` voor distributie; houd de repo in sync door de onderliggende `.maxpat`-bestanden bij te werken.
+
+Voor een volledige Live 12-verificatie vóór release: [docs/M4L-template-checklist.md](docs/M4L-template-checklist.md).
 
 ## Roadmap (t.o.v. Ableton Looplet)
 

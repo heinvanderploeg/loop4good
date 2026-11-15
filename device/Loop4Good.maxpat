@@ -32,7 +32,7 @@
         "box": {
           "id": "bp-load",
           "maxclass": "bpatcher",
-          "name": "patchers/l4g.buffer-loader.maxpat",
+          "name": "l4g.buffer-loader.maxpat",
           "patching_rect": [
             40.0,
             40.0,
@@ -55,7 +55,7 @@
         "box": {
           "id": "bp-mix",
           "maxclass": "bpatcher",
-          "name": "patchers/l4g.mixer.maxpat",
+          "name": "l4g.mixer.maxpat",
           "patching_rect": [
             40.0,
             480.0,
@@ -214,7 +214,7 @@
         "box": {
           "id": "bp-h1",
           "maxclass": "bpatcher",
-          "name": "patchers/l4g.playhead.maxpat",
+          "name": "l4g.playhead.maxpat",
           "patching_rect": [
             400.0,
             180.0,
@@ -466,7 +466,7 @@
         "box": {
           "id": "bp-h2",
           "maxclass": "bpatcher",
-          "name": "patchers/l4g.playhead.maxpat",
+          "name": "l4g.playhead.maxpat",
           "patching_rect": [
             400.0,
             250.0,
@@ -718,7 +718,7 @@
         "box": {
           "id": "bp-h3",
           "maxclass": "bpatcher",
-          "name": "patchers/l4g.playhead.maxpat",
+          "name": "l4g.playhead.maxpat",
           "patching_rect": [
             400.0,
             320.0,
@@ -970,7 +970,7 @@
         "box": {
           "id": "bp-h4",
           "maxclass": "bpatcher",
-          "name": "patchers/l4g.playhead.maxpat",
+          "name": "l4g.playhead.maxpat",
           "patching_rect": [
             400.0,
             390.0,

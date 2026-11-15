@@ -10,8 +10,17 @@ Een open Max for Live-instrument: eenvoudige **Looplet**-kloon voor Ableton Live
 ## Installeren
 
 1. Clone deze repo.
-2. Sleep [`device/Loop4Good.maxpat`](device/Loop4Good.maxpat) in een **MIDI-track** in Live, of bewaar hem als `.amxd` via *Save As* in de Max-editor.
+2. Sleep [`device/Loop4Good.maxpat`](device/Loop4Good.maxpat) in een **MIDI-track** in Live (hele `device/` map moet intact blijven: root + `l4g.*.maxpat` in dezelfde folder).
 3. Open het device in Presentation mode, drop een WAV/AIFF op **Sample**, zet **Play** aan en stel per **Head** loop-start/end, speed en level in.
+
+### Openen lukt niet?
+
+| Symptoom | Oplossing |
+|----------|-----------|
+| Dubbelklik in Finder doet niets / verkeerde app | Open via **Ableton Live** (niet via Cursor/VS Code). In Cursor zie je alleen JSON — dat is geen Max-editor. |
+| Lege of grijze bpatchers | Alle `l4g.*.maxpat` moeten **naast** `Loop4Good.maxpat` in `device/` staan. Niet alleen het rootbestand kopiëren. |
+| `live.*` / `plugout~` onbekend | Alleen in **Max for Live** (Live 12 Suite + M4L). Gebruik *Edit* op het device in Live, niet een losse Max 8 zonder Live-objecten. |
+| Max-editor vanuit Live | MIDI-track → sleep device → klik **Edit** (pijl). Max opent met Live-objecten geladen. |
 
 ## Parameters (v1 scaffold)
 
@@ -35,10 +44,9 @@ Bronbestanden staan onder `device/`; git volgt **`.maxpat`**, niet per se een fr
 ```
 device/
   Loop4Good.maxpat       # M4L root-patcher
-  patchers/
-    l4g.buffer-loader.maxpat
-    l4g.playhead.maxpat
-    l4g.mixer.maxpat
+  l4g.buffer-loader.maxpat
+  l4g.playhead.maxpat
+  l4g.mixer.maxpat
 ```
 
 ### Workflow: template → maxpat → freeze

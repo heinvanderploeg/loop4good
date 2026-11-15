@@ -133,6 +133,21 @@
       },
       {
         "box": {
+          "id": "m4l-note",
+          "maxclass": "comment",
+          "text": "Live template validation is manual \u2014 verify once in Live 12 M4L Instrument template.",
+          "patching_rect": [
+            700.0,
+            120.0,
+            420.0,
+            20.0
+          ],
+          "numinlets": 1,
+          "numoutlets": 0
+        }
+      },
+      {
+        "box": {
           "id": "play",
           "maxclass": "live.toggle",
           "varname": "global_play",
@@ -148,7 +163,7 @@
           "presentation": 1,
           "presentation_rect": [
             20.0,
-            20.0,
+            15.0,
             40.0,
             40.0
           ],
@@ -249,7 +264,14 @@
               ],
               "parameter_unitstyle": 0
             }
-          }
+          },
+          "presentation": 1,
+          "presentation_rect": [
+            18.0,
+            110.0,
+            44.0,
+            48.0
+          ]
         }
       },
       {
@@ -282,7 +304,14 @@
               ],
               "parameter_unitstyle": 0
             }
-          }
+          },
+          "presentation": 1,
+          "presentation_rect": [
+            18.0,
+            165.0,
+            44.0,
+            48.0
+          ]
         }
       },
       {
@@ -310,12 +339,19 @@
               "parameter_type": 1,
               "parameter_mmin": 0.0,
               "parameter_mmax": 100.0,
-"parameter_initial": [
-                    20.0
-                  ],
+              "parameter_initial": [
+                20.0
+              ],
               "parameter_unitstyle": 0
             }
-          }
+          },
+          "presentation": 1,
+          "presentation_rect": [
+            18.0,
+            220.0,
+            44.0,
+            48.0
+          ]
         }
       },
       {
@@ -386,7 +422,14 @@
                 1
               ]
             }
-          }
+          },
+          "presentation": 1,
+          "presentation_rect": [
+            20.0,
+            65.0,
+            40.0,
+            40.0
+          ]
         }
       },
       {
@@ -409,7 +452,14 @@
               "parameter_shortname": "R1",
               "parameter_type": 2
             }
-          }
+          },
+          "presentation": 1,
+          "presentation_rect": [
+            20.0,
+            275.0,
+            40.0,
+            40.0
+          ]
         }
       },
       {
@@ -466,7 +516,14 @@
               ],
               "parameter_unitstyle": 0
             }
-          }
+          },
+          "presentation": 1,
+          "presentation_rect": [
+            213.0,
+            110.0,
+            44.0,
+            48.0
+          ]
         }
       },
       {
@@ -499,7 +556,14 @@
               ],
               "parameter_unitstyle": 0
             }
-          }
+          },
+          "presentation": 1,
+          "presentation_rect": [
+            213.0,
+            165.0,
+            44.0,
+            48.0
+          ]
         }
       },
       {
@@ -527,12 +591,19 @@
               "parameter_type": 1,
               "parameter_mmin": 0.0,
               "parameter_mmax": 100.0,
-"parameter_initial": [
-                    20.0
-                  ],
+              "parameter_initial": [
+                20.0
+              ],
               "parameter_unitstyle": 0
             }
-          }
+          },
+          "presentation": 1,
+          "presentation_rect": [
+            213.0,
+            220.0,
+            44.0,
+            48.0
+          ]
         }
       },
       {
@@ -603,7 +674,14 @@
                 1
               ]
             }
-          }
+          },
+          "presentation": 1,
+          "presentation_rect": [
+            215.0,
+            65.0,
+            40.0,
+            40.0
+          ]
         }
       },
       {
@@ -626,7 +704,14 @@
               "parameter_shortname": "R2",
               "parameter_type": 2
             }
-          }
+          },
+          "presentation": 1,
+          "presentation_rect": [
+            215.0,
+            275.0,
+            40.0,
+            40.0
+          ]
         }
       },
       {
@@ -683,7 +768,14 @@
               ],
               "parameter_unitstyle": 0
             }
-          }
+          },
+          "presentation": 1,
+          "presentation_rect": [
+            408.0,
+            110.0,
+            44.0,
+            48.0
+          ]
         }
       },
       {
@@ -716,7 +808,14 @@
               ],
               "parameter_unitstyle": 0
             }
-          }
+          },
+          "presentation": 1,
+          "presentation_rect": [
+            408.0,
+            165.0,
+            44.0,
+            48.0
+          ]
         }
       },
       {
@@ -744,12 +843,19 @@
               "parameter_type": 1,
               "parameter_mmin": 0.0,
               "parameter_mmax": 100.0,
-"parameter_initial": [
-                    20.0
-                  ],
+              "parameter_initial": [
+                20.0
+              ],
               "parameter_unitstyle": 0
             }
-          }
+          },
+          "presentation": 1,
+          "presentation_rect": [
+            408.0,
+            220.0,
+            44.0,
+            48.0
+          ]
         }
       },
       {
@@ -820,7 +926,14 @@
                 1
               ]
             }
-          }
+          },
+          "presentation": 1,
+          "presentation_rect": [
+            410.0,
+            65.0,
+            40.0,
+            40.0
+          ]
         }
       },
       {
@@ -843,7 +956,14 @@
               "parameter_shortname": "R3",
               "parameter_type": 2
             }
-          }
+          },
+          "presentation": 1,
+          "presentation_rect": [
+            410.0,
+            275.0,
+            40.0,
+            40.0
+          ]
         }
       },
       {
@@ -900,7 +1020,14 @@
               ],
               "parameter_unitstyle": 0
             }
-          }
+          },
+          "presentation": 1,
+          "presentation_rect": [
+            603.0,
+            110.0,
+            44.0,
+            48.0
+          ]
         }
       },
       {
@@ -928,12 +1055,19 @@
               "parameter_type": 1,
               "parameter_mmin": 0.0,
               "parameter_mmax": 100.0,
-"parameter_initial": [
-                    20.0
-                  ],
+              "parameter_initial": [
+                20.0
+              ],
               "parameter_unitstyle": 0
             }
-          }
+          },
+          "presentation": 1,
+          "presentation_rect": [
+            603.0,
+            165.0,
+            44.0,
+            48.0
+          ]
         }
       },
       {
@@ -961,12 +1095,19 @@
               "parameter_type": 1,
               "parameter_mmin": 0.0,
               "parameter_mmax": 100.0,
-"parameter_initial": [
-                    20.0
-                  ],
+              "parameter_initial": [
+                20.0
+              ],
               "parameter_unitstyle": 0
             }
-          }
+          },
+          "presentation": 1,
+          "presentation_rect": [
+            603.0,
+            220.0,
+            44.0,
+            48.0
+          ]
         }
       },
       {
@@ -1037,7 +1178,14 @@
                 1
               ]
             }
-          }
+          },
+          "presentation": 1,
+          "presentation_rect": [
+            605.0,
+            65.0,
+            40.0,
+            40.0
+          ]
         }
       },
       {
@@ -1060,7 +1208,14 @@
               "parameter_shortname": "R4",
               "parameter_type": 2
             }
-          }
+          },
+          "presentation": 1,
+          "presentation_rect": [
+            605.0,
+            275.0,
+            40.0,
+            40.0
+          ]
         }
       }
     ],

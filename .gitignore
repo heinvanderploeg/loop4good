@@ -1,0 +1,7 @@
+.DS_Store
+*.maxbak
+*.maxswp
+*~
+*.asd
+.env
+.env.*

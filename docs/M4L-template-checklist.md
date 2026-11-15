@@ -12,7 +12,7 @@ Vereisten:
 
 - [ ] In Live: **Create** → **Insert Max Device** → **Max Instrument** (of equivalent M4L Instrument-template).
 - [ ] Root-patcher openen in Max; structuur uit repo overnemen of `device/Loop4Good.maxpat` als basis gebruiken.
-- [ ] Subpatchers `patchers/l4g.*.maxpat` staan relatief t.o.v. root (bpatchers laden zonder padfouten).
+- [ ] Subpatchers `l4g.*.maxpat` staan in **dezelfde map** als `Loop4Good.maxpat` (Max search path / bpatcher).
 
 ## 2. M4L-conventies (root)
 

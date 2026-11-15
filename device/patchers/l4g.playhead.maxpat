@@ -155,24 +155,6 @@
       },
       {
         "box": {
-          "id": "sig-rate",
-          "maxclass": "newobj",
-          "text": "sig~",
-          "patching_rect": [
-            40.0,
-            200.0,
-            30.0,
-            22.0
-          ],
-          "numinlets": 1,
-          "numoutlets": 1,
-          "outlettype": [
-            "signal"
-          ]
-        }
-      },
-      {
-        "box": {
           "id": "sig-l0",
           "maxclass": "newobj",
           "text": "sig~",
@@ -405,6 +387,97 @@
             ""
           ]
         }
+      },
+      {
+        "box": {
+          "id": "pak-loop",
+          "maxclass": "newobj",
+          "text": "pak 0. 0.",
+          "patching_rect": [
+            100.0,
+            130.0,
+            55.800000000000004,
+            22.0
+          ],
+          "numinlets": 2,
+          "numoutlets": 1,
+          "outlettype": [
+            ""
+          ]
+        }
+      },
+      {
+        "box": {
+          "id": "unpack-loop",
+          "maxclass": "newobj",
+          "text": "unpack 0. 0.",
+          "patching_rect": [
+            100.0,
+            155.0,
+            74.4,
+            22.0
+          ],
+          "numinlets": 1,
+          "numoutlets": 2,
+          "outlettype": [
+            "",
+            ""
+          ]
+        }
+      },
+      {
+        "box": {
+          "id": "expr-l0",
+          "maxclass": "newobj",
+          "text": "expr min($f1, $f2 - 1.)",
+          "patching_rect": [
+            100.0,
+            185.0,
+            142.6,
+            22.0
+          ],
+          "numinlets": 2,
+          "numoutlets": 1,
+          "outlettype": [
+            ""
+          ]
+        }
+      },
+      {
+        "box": {
+          "id": "expr-l1",
+          "maxclass": "newobj",
+          "text": "expr max($f1, $f2 + 1.)",
+          "patching_rect": [
+            220.0,
+            185.0,
+            142.6,
+            22.0
+          ],
+          "numinlets": 2,
+          "numoutlets": 1,
+          "outlettype": [
+            ""
+          ]
+        }
+      },
+      {
+        "box": {
+          "id": "line-rate",
+          "maxclass": "newobj",
+          "text": "line~ 50",
+          "patching_rect": [
+            40.0,
+            215.0,
+            49.6,
+            22.0
+          ],
+          "numinlets": 2,
+          "numoutlets": 1,
+          "outlettype": [
+            "signal"
+          ]
+        }
       }
     ],
     "lines": [
@@ -502,45 +575,6 @@
       {
         "patchline": {
           "source": [
-            "zero",
-            0
-          ],
-          "destination": [
-            "sig-rate",
-            0
-          ],
-          "hidden": 0
-        }
-      },
-      {
-        "patchline": {
-          "source": [
-            "in-l0",
-            0
-          ],
-          "destination": [
-            "sig-l0",
-            0
-          ],
-          "hidden": 0
-        }
-      },
-      {
-        "patchline": {
-          "source": [
-            "in-l1",
-            0
-          ],
-          "destination": [
-            "sig-l1",
-            0
-          ],
-          "hidden": 0
-        }
-      },
-      {
-        "patchline": {
-          "source": [
             "sig-l0",
             0
           ],
@@ -619,19 +653,6 @@
       {
         "patchline": {
           "source": [
-            "gate-rate",
-            0
-          ],
-          "destination": [
-            "sig-rate",
-            0
-          ],
-          "hidden": 0
-        }
-      },
-      {
-        "patchline": {
-          "source": [
             "groove",
             0
           ],
@@ -676,6 +697,162 @@
           ],
           "destination": [
             "out-r",
+            0
+          ],
+          "hidden": 0
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "in-l0",
+            0
+          ],
+          "destination": [
+            "pak-loop",
+            0
+          ],
+          "hidden": 0
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "in-l1",
+            0
+          ],
+          "destination": [
+            "pak-loop",
+            1
+          ],
+          "hidden": 0
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "pak-loop",
+            0
+          ],
+          "destination": [
+            "unpack-loop",
+            0
+          ],
+          "hidden": 0
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "unpack-loop",
+            0
+          ],
+          "destination": [
+            "expr-l0",
+            0
+          ],
+          "hidden": 0
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "unpack-loop",
+            1
+          ],
+          "destination": [
+            "expr-l0",
+            1
+          ],
+          "hidden": 0
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "unpack-loop",
+            0
+          ],
+          "destination": [
+            "expr-l1",
+            1
+          ],
+          "hidden": 0
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "unpack-loop",
+            1
+          ],
+          "destination": [
+            "expr-l1",
+            0
+          ],
+          "hidden": 0
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "expr-l0",
+            0
+          ],
+          "destination": [
+            "sig-l0",
+            0
+          ],
+          "hidden": 0
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "expr-l1",
+            0
+          ],
+          "destination": [
+            "sig-l1",
+            0
+          ],
+          "hidden": 0
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "gate-rate",
+            0
+          ],
+          "destination": [
+            "line-rate",
+            0
+          ],
+          "hidden": 0
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "zero",
+            0
+          ],
+          "destination": [
+            "line-rate",
+            0
+          ],
+          "hidden": 0
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "line-rate",
+            0
+          ],
+          "destination": [
+            "groove",
             0
           ],
           "hidden": 0

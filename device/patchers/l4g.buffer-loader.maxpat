@@ -157,6 +157,24 @@
           "numoutlets": 0,
           "comment": "lengthMs"
         }
+      },
+      {
+        "box": {
+          "id": "expr-len",
+          "maxclass": "newobj",
+          "text": "expr max($f1, 1.)",
+          "patching_rect": [
+            300.0,
+            215.0,
+            105.4,
+            22.0
+          ],
+          "numinlets": 1,
+          "numoutlets": 1,
+          "outlettype": [
+            ""
+          ]
+        }
       }
     ],
     "lines": [
@@ -229,6 +247,19 @@
         "patchline": {
           "source": [
             "route-ms",
+            0
+          ],
+          "destination": [
+            "expr-len",
+            0
+          ],
+          "hidden": 0
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "expr-len",
             0
           ],
           "destination": [
